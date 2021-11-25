@@ -1,1 +1,1 @@
-web: gunicorn Happiness.app:app --log-file --preload --log-level debug
+web: gunicorn Happiness.app:app --preload
