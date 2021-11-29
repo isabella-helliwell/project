@@ -1,3 +1,9 @@
+label {
+    padding-right: 50px;
+    font-size: 10rem;
+    font:bold;
+}
+
 
 .column {
   float: left;
@@ -49,7 +55,7 @@
 0 0 repeat;
   border-radius: 50%;
   background-size:630px;
-  animation: rotate 8s linear infinite;
+  animation: rotate 10s linear infinite;
   transition: transform 200ms linear;
   transform-style:preserve-3d;
   box-shadow: inset 0px 0 10px 0px #000080;
@@ -62,3 +68,53 @@
 100%{
  background-position: 630px 0;
 }
+
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  width: 130px;
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+  left: 10px;
+  background: #eee;
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #2196F3;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #064579;
+}
+
+.main {
+  margin-left: 140px; /* Same width as the sidebar + left position in px */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+
+
+
+
+
+
+
+
+
+
+
+

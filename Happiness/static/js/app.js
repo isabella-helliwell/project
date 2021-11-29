@@ -28,15 +28,7 @@ function buildTable(data) {
   function handleClick() {
     // Grab the datetime value from the filter
     let date = d3.select("#year").property("value");
-    console.log(date);
-
-    // function add_img(date){
-    //   var img=document.createElement('img');
-    //   img.src='../maps/';
-    //   console.log(img.src);
-    //   document.getElementById('body').appendChild(img);
-    //}
-
+ 
 
 
     let filteredData = tableData;
@@ -44,17 +36,15 @@ function buildTable(data) {
 
     if (date) {
 
-      console.log('inside if');
       filteredData = filteredData.filter(row => row.year == date);
-      console.log(filteredData);
+
 
     }
-    // str = filteredData+'.png';
-    // console.log(str);
+
     
     buildTable(filteredData);
    
-    //map(filteredData);
+
   }
   
 // Attach an event to listen for the form button
@@ -62,6 +52,10 @@ d3.selectAll("#filter-btn").on("click", handleClick);
 
 // Build the table when the page loads
 buildTable(tableData);
+
+
+
+
 
 
 
