@@ -3,7 +3,7 @@ import numpy as np
 import pickle#Initialize the flask App
 
 app = Flask(__name__)
-model_1 = pickle.load(open('model.pkl', 'rb'))
+model_1 = pickle.load(open('Happiness/model.pkl', 'rb'))
 
 #default page of our web-app
 @app.route('/')
