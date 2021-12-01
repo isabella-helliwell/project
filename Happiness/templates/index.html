@@ -84,6 +84,34 @@ meter::-webkit-meter-bar {
 }
  
 
+.tableFixHead {
+        overflow-y: auto;
+        height: 500px;
+      }
+      .tableFixHead thead th {
+        position: sticky;
+        top: 0;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      th,
+      td {
+        padding: 8px 16px;
+        border: 1px solid #ccc;
+      }
+      th {
+        background: #eee;
+      }     
+    
+    
+    
+    
+    
+    
+    
+
   </style>
 
 
@@ -290,8 +318,8 @@ meter::-webkit-meter-bar {
             </form> 
             <!--create the html table-->
             
-            <div class='col-md-12' style='background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);'>   
-                <table class='table table-striped'>
+            <div class="tableFixHead">
+              <table class='table table-striped'>
                    
                     <thead>
                         <tr>
